@@ -130,6 +130,9 @@ The decision could be overridden (only) for `smartctl` with the option `-l error
 - `smartd`: no longer ignores the signals `SIGINT`, `SIGQUIT`, `SIGHUP`, `SIGTERM` and
 `SIGUSR1` if ignored at startup.
 
+- `smartd`: `-n POWERMODE`: the 5-second `CHECK POWER MODE` retry is now only performed if the
+power mode would cause a skip.
+
 - The version information string of pre-release builds now uses the form `pre-X.Y-NNN` where
 `X.Y` is the version of the next release and `NNN` is the number of git commits since the
 previous release.
