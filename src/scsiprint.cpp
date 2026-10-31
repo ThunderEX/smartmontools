@@ -3562,9 +3562,9 @@ scsiPrintMain(scsi_device * device, const scsi_print_options & options)
             case 0x04: // STANDBY CONDITION ACTIVATED BY COMMAND
                 powername = "STANDBY BY COMMAND";  powerlimit = 2; break;
             case 0x05: // IDLE_B CONDITION ACTIVATED BY TIMER
-                powername = "IDLE BY TIMER";  powerlimit = 4; break;
+                powername = "IDLE_B BY TIMER";  powerlimit = 4; break;
             case 0x06: // IDLE_B CONDITION ACTIVATED BY COMMAND
-                powername = "IDLE_ BY COMMAND";  powerlimit = 4; break;
+                powername = "IDLE_B BY COMMAND";  powerlimit = 4; break;
             case 0x07: // IDLE_C CONDITION ACTIVATED BY TIMER
                 powername = "IDLE_C BY TIMER";  powerlimit = 4; break;
             case 0x08: // IDLE_C CONDITION ACTIVATED BY COMMAND
